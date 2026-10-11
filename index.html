@@ -1,0 +1,837 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f8fafc">
+  
+  <!-- SEO Primary Meta Tags -->
+  <title>Dharshan A — Full-Stack Software Engineer | React, Next.js, Node.js, AWS</title>
+  <meta name="title" content="Dharshan A — Full-Stack Software Engineer">
+  <meta name="description" content="Portfolio of Dharshan A, Full-Stack Software Engineer with 4+ years of experience specializing in React.js, Next.js, Node.js, Express.js, TypeScript, and AWS cloud architecture.">
+  <meta name="keywords" content="Dharshan A, Software Engineer, Full-Stack Developer, React.js, Next.js, Node.js, Express.js, AWS Chime SDK, TypeScript, Madurai, Portfolio">
+  <meta name="author" content="Dharshan A">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dharshan-portfolio.netlify.app/">
+  <meta property="og:title" content="Dharshan A — Full-Stack Software Engineer">
+  <meta property="og:description" content="Explore the portfolio of Dharshan A: 4+ years of building scalable web platforms, real-time conferencing, enterprise dashboards, and AI integrations.">
+
+  <!-- Modern Executive Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- Sticky Header -->
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#home" aria-label="Dharshan A Home">
+        <span class="brand-badge" aria-hidden="true">DA</span>
+        <span>Dharshan</span>.A
+      </a>
+
+      <nav class="nav-links" id="navLinks" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-label="Toggle theme">
+          <span class="icon" id="themeIcon">☀️</span>
+          <span id="themeLabel">Light</span>
+        </button>
+        <a class="btn-resume" href="./Dharshan_A.pdf" download="Dharshan_A_Resume.pdf" title="Download Dharshan's Resume">
+          <span>Resume</span> ⬇
+        </a>
+        <button class="menu-toggle" id="menuToggle" type="button" aria-label="Toggle navigation menu" aria-expanded="false">
+          ☰
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="home">
+    <!-- Hero Section -->
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">
+          <span class="status-dot"></span> Full-Stack Software Engineer · Madurai, India
+        </div>
+        <h1>
+          Scalable Architecture.<br>
+          <span class="gradient-text">High-Impact Engineering.</span>
+        </h1>
+        <p class="hero-lead">
+          I'm <strong>Dharshan A</strong>, a Full-Stack Software Engineer with <strong>4+ years of experience</strong> architecting scalable, high-performance web applications using React.js, Next.js, Node.js, Express.js, TypeScript, and AWS. Proven track record driving <strong>30% faster page loads</strong>, maintaining <strong>90% unit test coverage</strong>, and leading frontend & full-stack delivery for global platforms.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projects">Explore Selected Work ↘</a>
+          <a class="btn btn-secondary" href="./Dharshan_A.pdf" download="Dharshan_A_Resume.pdf">Download Resume (PDF) ⬇</a>
+          <a class="btn btn-ghost" href="#contact">Get in Touch ✉</a>
+        </div>
+      </div>
+
+      <!-- Hero Profile Summary Card -->
+      <aside class="profile-card" aria-label="Dharshan A profile overview">
+        <div class="profile-top">
+          <div class="profile-avatar" aria-hidden="true">DA</div>
+          <div class="profile-meta">
+            <h2>Dharshan A</h2>
+            <p class="role">Full-Stack Software Engineer</p>
+            <p class="company">Tringapps Research Labs</p>
+          </div>
+        </div>
+        <div class="profile-stats-list">
+          <div class="stat-row">
+            <span>Experience</span>
+            <strong>4+ Years (Mar 2022 – Present)</strong>
+          </div>
+          <div class="stat-row">
+            <span>Core Stack</span>
+            <strong>Next.js · React · Node.js · AWS</strong>
+          </div>
+          <div class="stat-row">
+            <span>Page Speed Impact</span>
+            <strong>⚡ 30% Faster Load Times</strong>
+          </div>
+          <div class="stat-row">
+            <span>Test Coverage</span>
+            <strong>🛡️ 90% (Jest & SonarQube)</strong>
+          </div>
+          <div class="stat-row">
+            <span>Education</span>
+            <strong>MCA (8.5) & BCA (9.86 · Rank 1)</strong>
+          </div>
+        </div>
+        <div class="profile-tag-badge">
+          <span>Available for Engineering Opportunities</span>
+          <span>● Active</span>
+        </div>
+      </aside>
+    </div>
+
+    <!-- Impact Metrics Highlight Bar -->
+    <div class="wrap metrics-section">
+      <div class="metrics-bar" aria-label="Executive Performance Metrics">
+        <div class="metric-item">
+          <div class="metric-value">30%</div>
+          <div class="metric-label">Faster Page Loads</div>
+          <p class="metric-detail">Optimized with Next.js SSR, GraphQL batching & Lambda</p>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">90%</div>
+          <div class="metric-label">Unit Test Coverage</div>
+          <p class="metric-detail">Enforced via Jest and SonarQube quality gates</p>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">20%</div>
+          <div class="metric-label">Fewer Post-Release Bugs</div>
+          <p class="metric-detail">Achieved through strict peer reviews and CI/CD</p>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">4+</div>
+          <div class="metric-label">Releases Ahead of Schedule</div>
+          <p class="metric-detail">Led end-to-end Jira sprint planning & client delivery</p>
+        </div>
+        <div class="metric-item">
+          <div class="metric-value">9.86</div>
+          <div class="metric-label">BCA CGPA · Gold Medal</div>
+          <p class="metric-detail">1st Rank Holder at Thiagarajar College</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section 01: About -->
+    <section id="about">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-number">01 / ABOUT</div>
+          <div>
+            <h2 class="section-title">Architecting robust web solutions from concept to production.</h2>
+            <p class="section-desc">
+              With over 4 years of experience delivering mission-critical applications across EdTech, financial portals, AI platforms, and enterprise media, I bridge the gap between intuitive user experience and resilient cloud infrastructure.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-grid">
+          <div class="card about-main-card">
+            <div>
+              <p>
+                My engineering approach combines modern component architecture, type safety, serverless microservices, and continuous performance optimization. Whether leading frontend delivery for a nationwide EdTech platform in Ghana or developing role-based administrative dashboards for Thomson Reuters as sole full-stack engineer, I focus on clean architecture, security compliance, and measurable business outcomes.
+              </p>
+              <p>
+                I thrive in collaborative teams where I can take complete project ownership—from requirements gathering and Jira sprint planning to code reviews, QA coordination, and production AWS deployments.
+              </p>
+            </div>
+
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon">🚀</span>
+                <h4>Frontend Architecture</h4>
+                <p>Next.js App Router, React, TypeScript, Redux Toolkit, Tailwind CSS, Responsive Design.</p>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">⚡</span>
+                <h4>Real-Time & Cloud</h4>
+                <p>AWS Chime SDK, WebSockets, Lambda, API Gateway, DynamoDB, S3, Cognito.</p>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">🗄️</span>
+                <h4>Data & Enterprise CMS</h4>
+                <p>PostgreSQL, OpenSearch, TypeORM, Adobe Experience Manager (AEM), SharePoint.</p>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">🛡️</span>
+                <h4>Quality & DevSecOps</h4>
+                <p>SonarQube, Veracode, Snyk, Jest Unit Testing, Jenkins CI/CD, Datadog.</p>
+              </div>
+            </div>
+          </div>
+
+          <aside class="card about-aside-card">
+            <div class="fact-list">
+              <div class="fact-item">
+                <span class="fact-label">Current Role</span>
+                <div class="fact-value">Software Engineer</div>
+                <div class="fact-sub">Tringapps Research Labs (Mar 2022 – Present)</div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Primary Stack</span>
+                <div class="fact-value">React.js · Next.js · Node.js · AWS</div>
+                <div class="fact-sub">TypeScript · Express.js · PostgreSQL · GraphQL</div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Engineering Leadership</span>
+                <div class="fact-value">Team Lead & Delivery Owner</div>
+                <div class="fact-sub">Sprint Planning · Mentorship · PR Reviews · Client Demos</div>
+              </div>
+              <div class="fact-item">
+                <span class="fact-label">Location</span>
+                <div class="fact-value">Madurai, Tamil Nadu, India</div>
+                <div class="fact-sub">Open to remote & relocation opportunities</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <a class="btn btn-primary" style="width: 100%;" href="#experience">
+                View Career Experience ↘
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 02: Skills -->
+    <section id="skills">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-number">02 / SKILLS</div>
+          <div>
+            <h2 class="section-title">Technical toolkit & capabilities.</h2>
+            <p class="section-desc">
+              Technologies and frameworks applied daily across frontend interfaces, cloud microservices, persistent databases, and security compliance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar" id="skillFilters">
+          <button class="filter-btn active" data-skill="all" type="button">All Skills</button>
+          <button class="filter-btn" data-skill="frontend" type="button">Frontend</button>
+          <button class="filter-btn" data-skill="backend" type="button">Backend & APIs</button>
+          <button class="filter-btn" data-skill="cloud" type="button">Cloud & DevOps</button>
+          <button class="filter-btn" data-skill="databases" type="button">Databases & Search</button>
+          <button class="filter-btn" data-skill="testing" type="button">Testing & Quality</button>
+          <button class="filter-btn" data-skill="leadership" type="button">Leadership</button>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Frontend -->
+          <article class="card skill-category-card" data-skill="frontend">
+            <h3><span class="icon">💻</span> Frontend Engineering</h3>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">Next.js (App Router)</span>
+              <span class="tag">TypeScript</span>
+              <span class="tag">JavaScript (ES6+)</span>
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">Sass</span>
+              <span class="tag">Tailwind CSS</span>
+              <span class="tag">Bootstrap</span>
+              <span class="tag">Redux Toolkit</span>
+              <span class="tag">Responsive Design</span>
+              <span class="tag">Webflow</span>
+              <span class="tag">Adobe Experience Manager (AEM)</span>
+            </div>
+          </article>
+
+          <!-- Backend & APIs -->
+          <article class="card skill-category-card" data-skill="backend">
+            <h3><span class="icon">⚙️</span> Backend & APIs</h3>
+            <div class="tag-list">
+              <span class="tag">Node.js</span>
+              <span class="tag">Express.js</span>
+              <span class="tag">RESTful APIs</span>
+              <span class="tag">GraphQL</span>
+              <span class="tag">TypeORM</span>
+              <span class="tag">WebSockets</span>
+              <span class="tag">Serverless Architecture</span>
+            </div>
+          </article>
+
+          <!-- Cloud & DevOps -->
+          <article class="card skill-category-card" data-skill="cloud">
+            <h3><span class="icon">☁️</span> Cloud & DevOps</h3>
+            <div class="tag-list">
+              <span class="tag">AWS Chime SDK</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">Amazon API Gateway</span>
+              <span class="tag">Amazon S3</span>
+              <span class="tag">AWS Cognito</span>
+              <span class="tag">AWS Amplify</span>
+              <span class="tag">Amazon CloudWatch</span>
+              <span class="tag">Jenkins CI/CD</span>
+              <span class="tag">Git & GitHub</span>
+            </div>
+          </article>
+
+          <!-- Databases & Search -->
+          <article class="card skill-category-card" data-skill="databases">
+            <h3><span class="icon">🗄️</span> Databases & Search</h3>
+            <div class="tag-list">
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Amazon DynamoDB</span>
+              <span class="tag">Amazon OpenSearch Service</span>
+              <span class="tag">Firebase</span>
+            </div>
+          </article>
+
+          <!-- Testing & Code Quality -->
+          <article class="card skill-category-card" data-skill="testing">
+            <h3><span class="icon">🛡️</span> Testing & Quality</h3>
+            <div class="tag-list">
+              <span class="tag">Jest</span>
+              <span class="tag">Unit Testing (90% Coverage)</span>
+              <span class="tag">SonarQube Gates</span>
+              <span class="tag">Veracode Security Scans</span>
+              <span class="tag">Snyk Vulnerability Audits</span>
+              <span class="tag">Peer Code Reviews</span>
+            </div>
+          </article>
+
+          <!-- Analytics & Tools -->
+          <article class="card skill-category-card" data-skill="analytics">
+            <h3><span class="icon">📊</span> Analytics & Tools</h3>
+            <div class="tag-list">
+              <span class="tag">PostHog</span>
+              <span class="tag">Datadog</span>
+              <span class="tag">Recharts Visualizations</span>
+              <span class="tag">Google Analytics</span>
+              <span class="tag">Adobe Analytics</span>
+              <span class="tag">Jira</span>
+              <span class="tag">Figma</span>
+              <span class="tag">Azure Boards</span>
+            </div>
+          </article>
+
+          <!-- Leadership -->
+          <article class="card skill-category-card" data-skill="leadership">
+            <h3><span class="icon">👥</span> Engineering Leadership</h3>
+            <div class="tag-list">
+              <span class="tag">Jira Sprint Planning</span>
+              <span class="tag">Technical Architecture</span>
+              <span class="tag">Requirements Gathering</span>
+              <span class="tag">Client Communication</span>
+              <span class="tag">Mentoring & PR Reviews</span>
+              <span class="tag">Release Management</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 03: Experience -->
+    <section id="experience">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-number">03 / EXPERIENCE</div>
+          <div>
+            <h2 class="section-title">Professional career journey.</h2>
+            <p class="section-desc">
+              Engineering impact, technical leadership, and production systems delivered across international client engagements.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="job-card">
+            <div class="job-sidebar">
+              <h3 class="job-role">Software Engineer</h3>
+              <div class="job-company">Tringapps Research Labs Private Limited</div>
+              <div class="job-location">Madurai, Tamil Nadu, India</div>
+              <span class="job-badge">MAR 2022 — PRESENT</span>
+              <div class="job-type">Full-Time · Full-Stack & Frontend Lead</div>
+            </div>
+
+            <div class="job-content">
+              <p class="job-intro">
+                Architecting and building production web applications across Next.js, React, Node.js, Express, PostgreSQL, and AWS serverless cloud services. Leading client deliveries, technical mentoring, and quality engineering.
+              </p>
+
+              <ul class="job-bullets">
+                <li>
+                  <strong>High Performance Delivery:</strong> Developed scalable React.js, Next.js, Node.js, and Express.js applications integrating REST APIs, GraphQL, PostgreSQL, and AWS Lambda, <strong>reducing page load times by 30%</strong>.
+                </li>
+                <li>
+                  <strong>End-to-End Leadership:</strong> Led full lifecycle client project delivery including requirements gathering, Jira sprint planning, development coordination, QA cycles, and production deployments; <strong>delivered 4 major feature releases ahead of schedule</strong>.
+                </li>
+                <li>
+                  <strong>Code Quality & SonarQube:</strong> Improved code quality through peer reviews and Jest-based unit testing, achieving <strong>90% code coverage</strong> and reducing post-release bugs by <strong>20%</strong>.
+                </li>
+                <li>
+                  <strong>Growth & Conversion Optimization:</strong> Optimized responsive interfaces using analytics and A/B testing, contributing to a <strong>15% increase in user retention</strong>.
+                </li>
+                <li>
+                  <strong>Real-Time & Video Systems:</strong> Built serverless real-time messaging and AWS Chime SDK video conferencing (screen sharing, noise suppression, dynamic layout switching, participant invitations) using DynamoDB, Lambda, and API Gateway.
+                </li>
+                <li>
+                  <strong>Enterprise Security & DevOps:</strong> Delivered a subscription management and role-based dashboard for Thomson Reuters users, automating deployments with Jenkins and passing Veracode and Snyk security checks as sole full-stack developer.
+                </li>
+                <li>
+                  <strong>Mentorship & Release Ownership:</strong> Led frontend delivery and mentored team members on Katon Classroom & Meet and Memomatic platforms, reviewing and merging pull requests and coordinating QA and release cycles.
+                </li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 04: Projects -->
+    <section id="projects">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-number">04 / PROJECTS</div>
+          <div>
+            <h2 class="section-title">Selected projects & platforms.</h2>
+            <p class="section-desc">
+              A curated showcase of major software products engineered for scale, real-time collaboration, AI integration, and enterprise compliance.
+            </p>
+          </div>
+        </div>
+
+        <!-- Filter bar -->
+        <div class="filter-bar" id="projectFilters">
+          <button class="filter-btn active" data-category="all" type="button">All Projects</button>
+          <button class="filter-btn" data-category="edtech" type="button">EdTech & Real-Time</button>
+          <button class="filter-btn" data-category="enterprise" type="button">Enterprise & Security</button>
+          <button class="filter-btn" data-category="ai" type="button">AI Integration</button>
+          <button class="filter-btn" data-category="realtime" type="button">Serverless Suite</button>
+          <button class="filter-btn" data-category="cms" type="button">Media CMS</button>
+          <button class="filter-btn" data-category="frontend" type="button">Fintech & Auth</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 01: Katon Classroom -->
+          <article class="project-card" data-category="edtech">
+            <div class="project-top">
+              <span class="project-index">PROJECT 01</span>
+              <span class="project-role-badge">Lead Frontend Developer</span>
+            </div>
+            <h3 class="project-title">Katon Classroom & Meet</h3>
+            <div class="project-subtitle">Nationwide Digital Education Platform for Ghana</div>
+            <p class="project-desc">
+              Architected a centralized digital learning platform for schools across Ghana with interactive assignments, timed quizzes, textbooks, real-time messaging, and multi-user video conferencing.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> Next.js App Router · AWS Chime SDK Video · PostHog Analytics
+            </div>
+            <div class="tag-list">
+              <span class="tag">Next.js</span>
+              <span class="tag">Firebase</span>
+              <span class="tag">AWS Chime SDK</span>
+              <span class="tag">Recharts</span>
+              <span class="tag">Tailwind CSS</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="katon-classroom" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 02: Thomson Reuters -->
+          <article class="project-card" data-category="enterprise">
+            <div class="project-top">
+              <span class="project-index">PROJECT 02</span>
+              <span class="project-role-badge">Sole Full-Stack Developer</span>
+            </div>
+            <h3 class="project-title">Thomson Reuters Admin Portal</h3>
+            <div class="project-subtitle">Enterprise Subscription & Security Platform</div>
+            <p class="project-desc">
+              Engineered role-based administrative dashboards for subscription management with interactive data visualizations, PostgreSQL persistence, and automated Jenkins CI/CD passing Veracode & Snyk audits.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> TypeORM & PostgreSQL · Jenkins CI/CD · Veracode & Snyk Audits
+            </div>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">PostgreSQL</span>
+              <span class="tag">TypeORM</span>
+              <span class="tag">Datadog</span>
+              <span class="tag">Jenkins</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="reuters-portal" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 03: Memomatic -->
+          <article class="project-card" data-category="ai">
+            <div class="project-top">
+              <span class="project-index">PROJECT 03</span>
+              <span class="project-role-badge">Frontend Tech Lead</span>
+            </div>
+            <h3 class="project-title">Memomatic (AI Integration)</h3>
+            <div class="project-subtitle">AI-Powered Enterprise Memo Platform</div>
+            <p class="project-desc">
+              Architected an AI-powered corporate memo and document generation platform from scratch, implementing dynamic prompt configuration, AI content variants, role-based controls, and PDF/Word exports.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> Dynamic Prompt Engine · Content Variants · PDF/Word Export
+            </div>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">Redux</span>
+              <span class="tag">Material UI</span>
+              <span class="tag">Recharts</span>
+              <span class="tag">AI Prompting</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="memomatic-ai" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 04: Tring Hub -->
+          <article class="project-card" data-category="realtime">
+            <div class="project-top">
+              <span class="project-index">PROJECT 04</span>
+              <span class="project-role-badge">Full-Stack Developer</span>
+            </div>
+            <h3 class="project-title">Tring Hub, Hire, Chat & Meet</h3>
+            <div class="project-subtitle">Internal Serverless Real-Time Enterprise Suite</div>
+            <p class="project-desc">
+              Developed serverless real-time messaging using DynamoDB, AWS Lambda, API Gateway, and WebSockets, alongside AWS Chime SDK video meetings with noise suppression and a timed candidate assessment engine.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> WebSockets · DynamoDB · AWS Chime Video · Jira Sync
+            </div>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">Node.js</span>
+              <span class="tag">AWS Lambda</span>
+              <span class="tag">DynamoDB</span>
+              <span class="tag">WebSockets</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="tring-hub" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 05: Revolt AEM -->
+          <article class="project-card" data-category="cms">
+            <div class="project-top">
+              <span class="project-index">PROJECT 05</span>
+              <span class="project-role-badge">Enterprise CMS Engineer</span>
+            </div>
+            <h3 class="project-title">Revolt AEM – Media Platform</h3>
+            <div class="project-subtitle">High-Traffic CMS & Video Ad Integrations</div>
+            <p class="project-desc">
+              Developed UI features using Adobe Experience Manager (AEM), integrating SharePoint content, Amazon OpenSearch Service for real-time querying, and JW Player with pre/mid/post-roll ad controls and OneTrust consent.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> AEM Components · Amazon OpenSearch · JW Player Ads · OneTrust
+            </div>
+            <div class="tag-list">
+              <span class="tag">AEM</span>
+              <span class="tag">Amazon OpenSearch</span>
+              <span class="tag">JW Player</span>
+              <span class="tag">SharePoint</span>
+              <span class="tag">Adobe Analytics</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="revolt-aem" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 06: Revolt Creator -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-top">
+              <span class="project-index">PROJECT 06</span>
+              <span class="project-role-badge">Frontend Developer</span>
+            </div>
+            <h3 class="project-title">Revolt Creator Network & Cash</h3>
+            <div class="project-subtitle">Creator Monetization & Authentication Portal</div>
+            <p class="project-desc">
+              Owned full product lifecycle from requirements to production deployment. Built secure authentication with AWS Amplify and Cognito; conducted A/B testing across 3 design variants to boost creator onboarding.
+            </p>
+            <div class="project-metrics">
+              <span class="dot"></span> AWS Amplify & Cognito Auth · A/B Tested · 15% Retention Boost
+            </div>
+            <div class="tag-list">
+              <span class="tag">React.js</span>
+              <span class="tag">AWS Amplify</span>
+              <span class="tag">AWS Cognito</span>
+              <span class="tag">Google Analytics</span>
+              <span class="tag">Open Graph SEO</span>
+            </div>
+            <div class="project-footer">
+              <button class="btn-details btn-view-details" data-project-id="revolt-creator" type="button">
+                View Architecture ↗
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 05: Education & Academic Honors -->
+    <section id="education">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="section-number">05 / ACADEMICS</div>
+          <div>
+            <h2 class="section-title">Education & academic distinctions.</h2>
+            <p class="section-desc">
+              Top academic excellence, departmental leadership, and prestigious university honors.
+            </p>
+          </div>
+        </div>
+
+        <div class="edu-awards-grid">
+          <!-- Degrees -->
+          <div>
+            <h3 class="subsection-title">🎓 Higher Education</h3>
+
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <h4 class="edu-degree">Master of Computer Applications (MCA)</h4>
+                <span class="score-badge">CGPA: 8.5 / 10</span>
+              </div>
+              <div class="edu-institution">University of Madras, Institute of Distance Education, Chennai</div>
+              <p class="edu-period">2022 – 2024 · Post-Graduate Degree</p>
+            </div>
+
+            <div class="edu-card">
+              <div class="edu-card-top">
+                <h4 class="edu-degree">Bachelor of Computer Applications (BCA)</h4>
+                <span class="score-badge">CGPA: 9.86 / 10</span>
+              </div>
+              <div class="edu-institution">Thiagarajar College, Madurai</div>
+              <p class="edu-period">2019 – 2022 · 1st Rank Holder & Gold Medallist</p>
+            </div>
+          </div>
+
+          <!-- Awards -->
+          <div>
+            <h3 class="subsection-title">🏆 Honors & Accolades</h3>
+
+            <div class="award-card">
+              <div class="award-header">
+                <h4 class="award-title">🥇 Gold Medallist, 1st Rank Holder</h4>
+                <span class="award-date">DEC 2022</span>
+              </div>
+              <div style="font-weight: 600; font-size: 0.85rem; color: var(--accent-primary);">
+                Thiagarajar College, Madurai
+              </div>
+              <p class="award-desc">
+                Conferred the Gold Medal for securing the 1st Rank across the entire graduating class with an outstanding CGPA of 9.86 / 10 in the Bachelor of Computer Applications program.
+              </p>
+            </div>
+
+            <div class="award-card">
+              <div class="award-header">
+                <h4 class="award-title">🌟 Best Student of the Year Award</h4>
+                <span class="award-date">APR 2022</span>
+              </div>
+              <div style="font-weight: 600; font-size: 0.85rem; color: var(--accent-primary);">
+                Thiagarajar College, Madurai
+              </div>
+              <p class="award-desc">
+                Awarded the Best Student Award in recognition of stellar academic performance, exemplary character, active technical leadership, and peer mentorship.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 06: Contact -->
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact-box">
+          <!-- Left: Contact Details -->
+          <div class="contact-info">
+            <div class="section-number" style="margin-bottom: 8px;">06 / CONTACT</div>
+            <h2>Let's build something extraordinary.</h2>
+            <p>
+              I am open to full-stack engineering roles, technical lead opportunities, and challenging frontend / cloud architecture projects. Reach out directly or send a message below.
+            </p>
+
+            <div class="contact-links-grid">
+              <!-- Email -->
+              <div class="contact-link-card">
+                <div class="contact-link-left">
+                  <span class="contact-icon">✉️</span>
+                  <div class="contact-label-group">
+                    <b>Direct Email</b>
+                    <span>bcadharshan3@gmail.com</span>
+                  </div>
+                </div>
+                <button class="copy-btn btn-copy-email" type="button" title="Copy email address">
+                  Copy
+                </button>
+              </div>
+
+              <!-- Phone -->
+              <div class="contact-link-card">
+                <div class="contact-link-left">
+                  <span class="contact-icon">📞</span>
+                  <div class="contact-label-group">
+                    <b>Phone & WhatsApp</b>
+                    <span>+91 90871 05098</span>
+                  </div>
+                </div>
+                <button class="copy-btn btn-copy-phone" type="button" title="Copy phone number">
+                  Copy
+                </button>
+              </div>
+
+              <!-- LinkedIn -->
+              <div class="contact-link-card">
+                <div class="contact-link-left">
+                  <span class="contact-icon">🔗</span>
+                  <div class="contact-label-group">
+                    <b>LinkedIn Profile</b>
+                    <span>linkedin.com/in/dharshan03</span>
+                  </div>
+                </div>
+                <a class="copy-btn" href="https://www.linkedin.com/in/dharshan03" target="_blank" rel="noopener noreferrer">
+                  Open ↗
+                </a>
+              </div>
+
+              <!-- Resume File -->
+              <div class="contact-link-card">
+                <div class="contact-link-left">
+                  <span class="contact-icon">📄</span>
+                  <div class="contact-label-group">
+                    <b>Official Resume</b>
+                    <span>Dharshan_A.pdf (Verified)</span>
+                  </div>
+                </div>
+                <a class="copy-btn" href="./Dharshan_A.pdf" download="Dharshan_A_Resume.pdf">
+                  Download ⬇
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right: Interactive Contact Form -->
+          <div class="contact-form-container">
+            <h3 style="margin: 0 0 16px; font-size: 1.22rem; font-family: var(--font-display); color: var(--text-primary);">
+              Send an Executive Message
+            </h3>
+
+            <form class="contact-form" id="contactForm" novalidate>
+              <div class="form-group">
+                <label for="name">Your Name</label>
+                <input class="form-control" type="text" id="name" name="name" placeholder="e.g. Sarah Jenkins" required>
+                <span class="form-error" id="error-name"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Work Email</label>
+                <input class="form-control" type="email" id="email" name="email" placeholder="e.g. s.jenkins@enterprise.com" required>
+                <span class="form-error" id="error-email"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input class="form-control" type="text" id="subject" name="subject" placeholder="e.g. Senior Full-Stack Engineering Role" required>
+                <span class="form-error" id="error-subject"></span>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" name="message" placeholder="Provide details regarding the product, engineering stack, or opportunity..." required></textarea>
+                <span class="form-error" id="error-message"></span>
+              </div>
+
+              <button class="btn btn-primary" type="submit" style="width: 100%; margin-top: 6px;">
+                Send Message ✉
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="wrap footer-inner">
+      <div class="footer-credits">
+        © <span id="currentYear"></span> <strong>Dharshan A</strong> · Full-Stack Software Engineer. All rights reserved.
+      </div>
+      <div>
+        <a class="back-to-top" href="#home">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Details Modal -->
+  <div class="modal-backdrop" id="projectModal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose" type="button" aria-label="Close modal dialog">✕</button>
+      <h3 class="modal-title" id="modalTitle">Project Title</h3>
+      <div class="modal-subtitle" id="modalSubtitle">Role & Subtitle</div>
+      <p class="modal-desc" id="modalDesc">Detailed project description will appear here.</p>
+
+      <div class="modal-section-title">Key Architectural Highlights:</div>
+      <ul class="modal-bullets" id="modalHighlights"></ul>
+
+      <div class="modal-section-title">Technologies Used:</div>
+      <div class="tag-list" id="modalTags"></div>
+    </div>
+  </div>
+
+  <!-- Toast Element -->
+  <div class="toast" id="toast" role="alert" aria-live="polite"></div>
+
+  <!-- Application Script -->
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>

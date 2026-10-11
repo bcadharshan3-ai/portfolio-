@@ -1,0 +1,23 @@
+{
+  "name": "dharshan-portfolio",
+  "version": "1.0.0",
+  "description": "Executive Portfolio of Dharshan A — Full-Stack Software Engineer",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/portfolio.test.js",
+    "lint": "node scripts/verify-quality.js",
+    "verify": "node scripts/verify-quality.js && node --test tests/portfolio.test.js",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "dharshan-a",
+    "full-stack-engineer",
+    "react",
+    "nextjs",
+    "nodejs",
+    "aws"
+  ],
+  "author": "Dharshan A",
+  "license": "MIT"
+}
