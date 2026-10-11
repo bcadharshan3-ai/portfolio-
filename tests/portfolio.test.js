@@ -2,6 +2,8 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {
   personalInfo,
+  careerStartDate,
+  calculateExperience,
   keyMetrics,
   skillCategories,
   experienceData,
@@ -13,13 +15,14 @@ import {
   filterSkills
 } from "../js/portfolio-data.js";
 
-test("Portfolio Data Integrity: personalInfo contains required fields", () => {
+test("Portfolio Data Integrity: personalInfo contains required fields and dynamic getters", () => {
   assert.equal(personalInfo.name, "Dharshan A");
   assert.equal(personalInfo.initials, "DA");
   assert.match(personalInfo.email, /@/);
   assert.ok(personalInfo.phone.length > 0);
   assert.ok(personalInfo.linkedin.includes("linkedin.com/in/dharshan03"));
-  assert.ok(personalInfo.summary.includes("4+ years"));
+  assert.ok(personalInfo.experienceYears.includes("Years"));
+  assert.ok(/years/i.test(personalInfo.summary));
 });
 
 test("Portfolio Data Integrity: keyMetrics contains 5 impact statistics", () => {
@@ -149,3 +152,31 @@ test("filterSkills: filters categories correctly", () => {
   const nullCat = filterSkills(skillCategories, null);
   assert.equal(nullCat.length, skillCategories.length);
 });
+
+test("calculateExperience: dynamically calculates years and handles edge cases", () => {
+  // Test from real career start date
+  const realExp = calculateExperience(careerStartDate);
+  assert.ok(realExp.years >= 4);
+  assert.ok(realExp.formatted.includes("+ Years"));
+  assert.ok(realExp.label.includes("Mar 2022 – Present"));
+
+  // Fixed test dates: exactly 2 years
+  const twoYears = calculateExperience("2022-03-01", new Date("2024-03-01"));
+  assert.equal(twoYears.years, 2);
+  assert.equal(twoYears.months, 0);
+  assert.equal(twoYears.formatted, "2+ Years");
+  assert.equal(twoYears.detailed, "2 Years");
+
+  // Fixed test dates: 2 years 6 months
+  const twoYearsSixMos = calculateExperience("2022-03-01", new Date("2024-09-01"));
+  assert.equal(twoYearsSixMos.years, 2);
+  assert.equal(twoYearsSixMos.months, 6);
+  assert.equal(twoYearsSixMos.detailed, "2 Years, 6 Months");
+
+  // Month wraparound edge case: started in Nov 2022, evaluated in Jan 2023 -> 0 years, 2 months
+  const wrap = calculateExperience("2022-11-01", new Date("2023-01-01"));
+  assert.equal(wrap.years, 0);
+  assert.equal(wrap.months, 2);
+  assert.equal(wrap.totalMonths, 2);
+});
+

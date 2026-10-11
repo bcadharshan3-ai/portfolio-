@@ -5,6 +5,41 @@
  * Clean, type-safe data structures adhering to SonarQube standards.
  */
 
+export const careerStartDate = "2022-03-01"; // Mar 2022 from resume
+
+/**
+ * Calculates career experience dynamically based on start date
+ * @param {string|Date} [startDate]
+ * @param {Date} [currentDate]
+ * @returns {{ years: number, months: number, totalMonths: number, formatted: string, detailed: string, label: string }}
+ */
+export function calculateExperience(startDate = careerStartDate, currentDate = new Date()) {
+  const start = new Date(startDate);
+  const now = new Date(currentDate);
+
+  let years = now.getFullYear() - start.getFullYear();
+  let months = now.getMonth() - start.getMonth();
+
+  if (months < 0) {
+    years -= 1;
+    months += 12;
+  }
+
+  const totalMonths = Math.max(0, years * 12 + months);
+  const formatted = `${years}+ Years`;
+  const detailed = months > 0 ? `${years} Years, ${months} Months` : `${years} Years`;
+  const label = `${years}+ Years (Mar 2022 – Present)`;
+
+  return {
+    years,
+    months,
+    totalMonths,
+    formatted,
+    detailed,
+    label
+  };
+}
+
 export const personalInfo = {
   name: "Dharshan A",
   initials: "DA",
@@ -18,9 +53,19 @@ export const personalInfo = {
   resumePath: "./Dharshan_A.pdf",
   currentRole: "Software Engineer",
   currentCompany: "Tringapps Research Labs Private Limited",
-  experienceYears: "4+ Years",
-  summary:
-    "Full-Stack Software Engineer with 4+ years of experience building scalable web applications using React.js, Next.js, TypeScript, Node.js, and GraphQL. Skilled in end-to-end project delivery, technical leadership, client communication, Jira sprint planning, code reviews, and AWS deployments. Demonstrated impact through 30% faster page loads, 90% code coverage, 20% fewer post-release bugs, and successful delivery of major feature releases ahead of schedule."
+  startDate: careerStartDate,
+  get experienceYears() {
+    return calculateExperience(this.startDate).formatted;
+  },
+  get experienceDetailed() {
+    return calculateExperience(this.startDate).detailed;
+  },
+  get experienceLabel() {
+    return calculateExperience(this.startDate).label;
+  },
+  get summary() {
+    return `Full-Stack Software Engineer with ${this.experienceYears} of experience building scalable web applications using React.js, Next.js, TypeScript, Node.js, and GraphQL. Skilled in end-to-end project delivery, technical leadership, client communication, Jira sprint planning, code reviews, and AWS deployments. Demonstrated impact through 30% faster page loads, 90% code coverage, 20% fewer post-release bugs, and successful delivery of major feature releases ahead of schedule.`;
+  }
 };
 
 export const keyMetrics = [

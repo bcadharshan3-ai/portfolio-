@@ -14,6 +14,7 @@ import {
 // DOM Ready initialization
 document.addEventListener("DOMContentLoaded", () => {
   initTheme();
+  initDynamicExperience();
   initMobileMenu();
   initCopyButtons();
   initProjectFilters();
@@ -23,6 +24,21 @@ document.addEventListener("DOMContentLoaded", () => {
   initScrollSpy();
   initYear();
 });
+
+/**
+ * Dynamically binds calculated experience into the DOM elements
+ */
+function initDynamicExperience() {
+  const expYearsElements = document.querySelectorAll(".dynamic-exp-years");
+  expYearsElements.forEach((el) => {
+    el.textContent = personalInfo.experienceYears;
+  });
+
+  const expLabelElements = document.querySelectorAll(".dynamic-exp-label");
+  expLabelElements.forEach((el) => {
+    el.textContent = personalInfo.experienceLabel;
+  });
+}
 
 /**
  * Initialize Light / Dark Executive Theme Toggle
